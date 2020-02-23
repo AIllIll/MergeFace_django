@@ -26,7 +26,7 @@ def merge_face(request):
         'feature_rate': (None, 50)
     }
     resp = requests.post('https://api-cn.faceplusplus.com/imagepp/v1/mergeface', files=data, params={},
-                         verify=False, timeout=10)
+                         verify=False, timeout=60)
     data = resp.json()
     # print(data['result'])
     return JsonResponse(data)
