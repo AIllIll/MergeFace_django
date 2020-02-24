@@ -31,14 +31,14 @@ def merge_face(request):
     merge_base64 = json_data['mergeFile']
     sex = json_data['sex']
 
-    template_base64 = 'http://http://212.64.36.89:2222/media/'+choice(list_choice)+'女.png'
+    template_url = 'http://http://212.64.36.89:2222/media/'+choice(list_choice)+'女.png'
     if sex == 1:
-        template_base64 = 'http://http://212.64.36.89:2222/media/'+choice(list_choice)+'男.png'
+        template_url = 'http://http://212.64.36.89:2222/media/'+choice(list_choice)+'男.png'
 
     data = {
         'api_key': (None, '_UXJe18uaMP78Nee_cavt9CuludqOTB2'),
         'api_secret': (None, '5mHV_xorKYRVPrWjnGcRBtO9YTna4--q'),
-        'template_base64': (None, template_base64),
+        'template_url': (None, template_url),
         'merge_base64': (None, merge_base64),
         'merge_rate': (None, 100),
         'feature_rate': (None, 50)
