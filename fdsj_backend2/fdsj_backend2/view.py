@@ -31,9 +31,9 @@ def merge_face(request):
     merge_base64 = json_data['mergeFile']
     sex = json_data['sex']
 
-    template_url = 'http://http://212.64.36.89:2222/media/'+choice(list_choice)+'女.png'
+    template_url = 'http://212.64.36.89:2222/media/'+choice(list_choice)+'女.png'
     if sex == 1:
-        template_url = 'http://http://212.64.36.89:2222/media/'+choice(list_choice)+'男.png'
+        template_url = 'http://212.64.36.89:2222/media/'+choice(list_choice)+'男.png'
 
     data = {
         'api_key': (None, '_UXJe18uaMP78Nee_cavt9CuludqOTB2'),
